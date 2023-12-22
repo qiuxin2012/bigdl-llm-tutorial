@@ -62,15 +62,6 @@ sudo reboot
 Here is the steps to install gpu driver:
 ```bash
 # install drivers
-# setup driver's apt repository
-sudo apt-get install -y gpg-agent wget
-wget -qO - https://repositories.intel.com/gpu/intel-graphics.key | \
-  sudo gpg --dearmor --output /usr/share/keyrings/intel-graphics.gpg
-echo "deb [arch=amd64,i386 signed-by=/usr/share/keyrings/intel-graphics.gpg] https://repositories.intel.com/gpu/ubuntu jammy client" | \
-  sudo tee /etc/apt/sources.list.d/intel-gpu-jammy.list
-
-sudo apt-get update
-
 sudo apt-get -y install \
     gawk \
     dkms \
