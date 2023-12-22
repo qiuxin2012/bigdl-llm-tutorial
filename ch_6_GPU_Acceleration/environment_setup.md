@@ -68,7 +68,7 @@ sudo apt-get -y install \
     linux-headers-$(uname -r) \
     libc6-dev
 	
-sudo apt install intel-i915-dkms=1.23.5.19.230406.21.5.17.0.1034+i38-1 intel-platform-vsec-dkms=2023.20.0-21 intel-platform-cse-dkms=2023.11.1-36 intel-fw-gpu=2023.39.2-255~22.04
+sudo apt install intel-i915-dkms=1.23.5.19.230406.21.5.17.0.1034+i38-1 intel-platform-vsec-dkms=2023.20.0-21 intel-platform-cse-dkms=2023.11.1-31 intel-fw-gpu=2023.39.2-255~22.04
 
 sudo apt-get install -y libigc-dev intel-igc-cm libigdfcl-dev libigfxcmrt-dev level-zero-dev
   
