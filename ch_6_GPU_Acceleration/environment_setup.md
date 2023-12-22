@@ -49,7 +49,7 @@ sudo  update-grub
 
 sudo reboot
 ```
-**Notice:  As 5.19's kernel doesn't have right Arc graphic driver. The machine may not start the desktop correctly, but you can use the ssh to login. Or you can select 5.19's recovery mode in the grub, then choose resume to resume the normal boot directly.**  
+**Notice:  We just a basic graphic driver installed in step 2, the desktop's resulotion is not high.**  
 You can remove the 6.2.0 kernel if you don't need it. It's an optional step.
 ```bash 
 # remove latest kernel (optional)
