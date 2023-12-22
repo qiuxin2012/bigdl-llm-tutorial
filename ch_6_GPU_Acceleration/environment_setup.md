@@ -58,7 +58,7 @@ sudo apt autoremove
 sudo reboot
 ```
 
-#### 2. Install GPU driver
+#### 4. Install GPU driver
 Here is the steps to install gpu driver:
 ```bash
 # install drivers
@@ -94,7 +94,7 @@ hwinfo --display
 
 Please make sure `i915 is activate` is in the output of `hwinfo --display`.
 
-### 3. Install oneAPI and BigDL
+### 5. Install oneAPI and BigDL
 ```
 # config oneAPI repository
 wget -O- https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg --dearmor | sudo tee /usr/share/keyrings/oneapi-archive-keyring.gpg > /dev/null
