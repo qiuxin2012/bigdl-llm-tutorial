@@ -83,7 +83,7 @@ newgrp render
 hwinfo --display
 ```
 
-Please make sure `i915 is activate` is in the output of `hwinfo --display`.
+Notice: please make sure `Driver Status: i915 is active` is in the output of `hwinfo --display`, it means the driver is enabled successfully. If the output contains `Driver Status: i915 is not active`, you can execute `sudo modprobe i915`, the output is `modprobe: ERROR: could not insert 'i915': Key was rejected by service`. It means your Arc card is limited by your secure boot. You can disable secure boot in bios, and check again.
 
 ### 5. Install oneAPI and BigDL
 ```
