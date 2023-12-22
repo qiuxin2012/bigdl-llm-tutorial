@@ -36,12 +36,12 @@ sudo apt install  -y \
   libxatracker-dev:i386 mesa-vdpau-drivers:i386 libva-x11-2:i386
 ```
 ### 3. Downgrade kernels
-Here are the steps to downgrade your kernel:
+Here are the steps to downgrade your kernel, and boot kernel 5.19.0-41-generic by default:
 ```bash
-# downgrade kernel to 5.19.0-41-generic
+# install kernel 5.19.0-41-generic
   
 sudo apt-get update && sudo apt-get install  -y --install-suggests  linux-image-5.19.0-41-generic
-
+# set kernel 5.19.0-41-generic as the default boot option
 sudo sed -i "s/GRUB_DEFAULT=.*/GRUB_DEFAULT=\"1> $(echo $(($(awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg \
 | grep -no '5.19.0-41' | sed 's/:/\n/g' | head -n 1)-2)))\"/" /etc/default/grub
 
